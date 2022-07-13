@@ -9,8 +9,12 @@ public class SL_ProjectEditorTarget : TargetRules
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.Add("SL_Project");
-		ExtraModuleNames.Add("LHW");
-		ExtraModuleNames.Add("LSH");
+		ExtraModuleNames.AddRange(new string[]
+			{ 
+			"SL_Project" ,
+			"LHW",
+			"LSH"
+			}
+		);
 	}
 }
